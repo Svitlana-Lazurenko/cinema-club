@@ -11,21 +11,39 @@ export const CastList = styled.ul`
 `;
 
 export const CastItem = styled.li`
-  flex-basis: calc((100% - 45px) / 4);
+  width: 200px;
+  border: 1px solid orange;
+  padding: 10px;
   :not(:last-child) {
     margin-bottom: 20px;
   }
 `;
 
-export const ProfileImage = styled.img``;
+export const ProfileImage = styled.img`
+  display: block;
+  margin: 0 auto 5px;
+`;
 
-export const Name = styled.p`
+export const Info = styled.p``;
+
+export const Name = styled.span`
+  display: block;
+  color: orange;
+  font-weight: 600;
   margin-bottom: 5px;
 `;
 
-export const Character = styled.p``;
+export const TextName = styled.span`
+  display: block;
+  margin-bottom: 5px;
+`;
 
-export const Text = styled.span`
+export const Character = styled.span`
+  display: block;
   color: orange;
   font-weight: 600;
+`;
+
+export const TextCharacter = styled.span`
+  display: block;
 `;
