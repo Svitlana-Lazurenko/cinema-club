@@ -14,7 +14,11 @@ export const MovieMainInfo = ({ movie }) => {
   return (
     <Container>
       <Poster
-        src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
+        src={
+          movie.poster_path
+            ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
+            : 'https://fakeimg.pl/300x450?text=300x450'
+        }
         alt={`poster of movie ${movie.title}`}
       />
       <Title>

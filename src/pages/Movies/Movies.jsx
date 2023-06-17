@@ -75,7 +75,7 @@ const Movies = () => {
     return (
       <main>
         <SearchForm value={query} onSubmit={onSubmit} onChange={onChange} />
-        <div>Error: {error.message}</div>
+        <div>{error.message}</div>
       </main>
     );
   }
