@@ -8,7 +8,9 @@ import {
   ProfileImage,
   Name,
   Character,
-  Text,
+  TextCharacter,
+  TextName,
+  Info,
 } from './Cast.styled';
 
 const Status = {
@@ -69,14 +71,12 @@ const Cast = () => {
                 }
                 alt={`${profile.name}`}
               />
-              <Name>
-                <Text>Name: </Text>
-                {profile.name}
-              </Name>
-              <Character>
-                <Text>Role: </Text>
-                {profile.character}
-              </Character>
+              <Info>
+                <Name>Name: </Name>
+                <TextName>{profile.name}</TextName>
+                <Character>Role: </Character>
+                <TextCharacter>{profile.character}</TextCharacter>
+              </Info>
             </CastItem>
           ))}
         </CastList>

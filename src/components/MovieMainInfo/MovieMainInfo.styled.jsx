@@ -2,9 +2,11 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   display: flex;
+  margin-bottom: 30px;
 `;
 
 export const Poster = styled.img`
+  display: block;
   margin-left: 8px;
 `;
 
