@@ -28,8 +28,8 @@ const Reviews = () => {
     api
       .fetchMovieReviews(id)
       .then(reviewsObj => {
-        if (reviewsObj.results === 0) {
-          return Promise.reject(new Error(`Cast not found`));
+        if (reviewsObj.results.length === 0) {
+          return Promise.reject(new Error(`Reviews not found`));
         }
 
         setReviews([...reviewsObj.results]);
@@ -50,7 +50,7 @@ const Reviews = () => {
   }
 
   if (status === 'rejected') {
-    return <div>Error: {error.message}</div>;
+    return <div>{error.message}</div>;
   }
 
   if (status === 'resolved') {

@@ -51,7 +51,7 @@ const Cast = () => {
   }
 
   if (status === 'rejected') {
-    return <div>Error: {error.message}</div>;
+    return <div>{error.message}</div>;
   }
 
   if (status === 'resolved') {
@@ -61,7 +61,11 @@ const Cast = () => {
           {cast.map(profile => (
             <CastItem key={profile.cast_id}>
               <ProfileImage
-                src={`https://image.tmdb.org/t/p/w200${profile.profile_path}`}
+                src={
+                  profile.profile_path
+                    ? `https://image.tmdb.org/t/p/w200${profile.profile_path}`
+                    : 'https://fakeimg.pl/200x300?text=200x300'
+                }
                 alt={`${profile.name}`}
               />
               <Name>{profile.name}</Name>

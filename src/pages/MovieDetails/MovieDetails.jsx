@@ -53,7 +53,7 @@ const MovieDetails = () => {
   if (status === 'rejected') {
     return (
       <main>
-        <div>Error: {error.message}</div>
+        <div>{error.message}</div>
       </main>
     );
   }
