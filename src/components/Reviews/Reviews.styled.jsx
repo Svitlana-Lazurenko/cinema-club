@@ -1,11 +1,22 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin-top: 30px;
+`;
 
 export const ReviewsList = styled.ul``;
 
-export const ReviewItem = styled.li``;
+export const ReviewItem = styled.li`
+  :not(:last-child) {
+    margin-bottom: 30px;
+  }
+`;
 
-export const Author = styled.h2``;
+export const Author = styled.h2`
+  text-decoration: underline;
+  margin-bottom: 15px;
+`;
 
-export const Content = styled.p``;
+export const Content = styled.p`
+  text-indent: 1%;
+`;

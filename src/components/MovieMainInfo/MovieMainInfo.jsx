@@ -4,6 +4,7 @@ import {
   Container,
   Title,
   Poster,
+  Info,
   UserScore,
   DescriptionTitle,
   Description,
@@ -23,18 +24,22 @@ export const MovieMainInfo = ({ movie }) => {
         }
         alt={`poster of movie ${movie.title}`}
       />
-      <Title>
-        {movie.title} ({movie.release_date.slice(0, 4)})
-      </Title>
-      <UserScore>User score: {Math.round(movie.vote_average * 10)}%</UserScore>
-      <DescriptionTitle>Overview</DescriptionTitle>
-      <Description>{movie.overview}</Description>
-      <GenresTitle>Genres</GenresTitle>
-      <GenresList>
-        {movie.genres.map(genre => (
-          <GenreItem key={genre.id}>{genre.name}</GenreItem>
-        ))}
-      </GenresList>
+      <Info>
+        <Title>
+          {movie.title} ({movie.release_date.slice(0, 4)})
+        </Title>
+        <UserScore>
+          User score: {Math.round(movie.vote_average * 10)}%
+        </UserScore>
+        <DescriptionTitle>Overview</DescriptionTitle>
+        <Description>{movie.overview}</Description>
+        <GenresTitle>Genres</GenresTitle>
+        <GenresList>
+          {movie.genres.map(genre => (
+            <GenreItem key={genre.id}>{genre.name}</GenreItem>
+          ))}
+        </GenresList>
+      </Info>
     </Container>
   );
 };
