@@ -1,5 +1,10 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Container, CardWrapper, MovieTitle } from './MoviesList.styled';
+import { useLocation } from 'react-router-dom';
+import {
+  Container,
+  StyledLink,
+  CardWrapper,
+  MovieTitle,
+} from './MoviesList.styled';
 
 export const MoviesList = ({ movies }) => {
   const location = useLocation();
@@ -7,11 +12,21 @@ export const MoviesList = ({ movies }) => {
   return (
     <Container>
       {movies.map(movie => (
-        <CardWrapper key={movie.id}>
-          <Link to={`${movie.id}`} state={{ from: location }}>
+        <StyledLink
+          to={`${movie.id}`}
+          state={{ from: location }}
+          key={movie.id}
+        >
+          <CardWrapper
+            background={
+              movie.backdrop_path
+                ? `https://image.tmdb.org/t/p/w300${movie.backdrop_path}`
+                : null
+            }
+          >
             <MovieTitle>{movie.title}</MovieTitle>
-          </Link>
-        </CardWrapper>
+          </CardWrapper>
+        </StyledLink>
       ))}
     </Container>
   );

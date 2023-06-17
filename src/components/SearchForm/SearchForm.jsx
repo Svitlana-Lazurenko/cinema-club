@@ -1,10 +1,10 @@
-import { Input, Button, Form, Label } from './SearchForm.styled';
+import { Input, Button, Form, Label, Text } from './SearchForm.styled';
 
 export const SearchForm = ({ value, onSubmit, onChange }) => {
   return (
     <Form onSubmit={e => onSubmit(e)}>
       <Label>
-        Enter title of movie
+        <Text>Enter title of movie</Text>
         <Input
           placeholder="Avatar"
           name="title"

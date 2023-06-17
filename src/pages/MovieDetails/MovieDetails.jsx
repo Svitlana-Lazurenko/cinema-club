@@ -11,6 +11,21 @@ const Status = {
   REJECTED: 'rejected',
 };
 
+const itemStyles = {
+  margin: 8,
+  padding: '12px 16px',
+  border: '1px solid orange',
+  borderRadius: 4,
+  backgroundColor: 'rgba(255, 165, 0, 0.2)',
+  color: 'white',
+};
+
+const linkStyles = {
+  display: 'block',
+  width: '100%',
+  height: '100%',
+};
+
 const MovieDetails = () => {
   const { id } = useParams();
   const location = useLocation();
@@ -64,11 +79,15 @@ const MovieDetails = () => {
         <BackLink to={backLinkLocationRef.current}>Go back</BackLink>
         <MovieMainInfo movie={movie} />
         <ul>
-          <li>
-            <Link to="cast">Cast</Link>
+          <li style={itemStyles}>
+            <Link style={linkStyles} to="cast">
+              Cast
+            </Link>
           </li>
-          <li>
-            <Link to="reviews">Reviews</Link>
+          <li style={itemStyles}>
+            <Link style={linkStyles} to="reviews">
+              Reviews
+            </Link>
           </li>
         </ul>
         <Suspense fallback={<div>Loading subpage...</div>}>
