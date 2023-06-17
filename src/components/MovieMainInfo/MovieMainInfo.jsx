@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Container,
   Title,
@@ -35,4 +37,8 @@ export const MovieMainInfo = ({ movie }) => {
       </GenresList>
     </Container>
   );
+};
+
+MovieMainInfo.propTypes = {
+  movie: PropTypes.PropTypes.object.isRequired,
 };
