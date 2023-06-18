@@ -10,7 +10,7 @@ export const SharedLayout = () => {
           <span role="img" aria-label="movie icon">
             🎬
           </span>
-          MovieWorld
+          CinemaClub
         </Logo>
         <nav>
           <Link to="/" end>
