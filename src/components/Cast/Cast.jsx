@@ -74,6 +74,7 @@ const Cast = () => {
               <Info>
                 <Name>Name: </Name>
                 <TextName>{profile.name}</TextName>
+                <br />
                 <Character>Role: </Character>
                 <TextCharacter>{profile.character}</TextCharacter>
               </Info>
