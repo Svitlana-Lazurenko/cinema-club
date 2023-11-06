@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cinema-club/static/css/main.6277926a.css",
-    "main.js": "/cinema-club/static/js/main.510af9ee.js",
+    "main.js": "/cinema-club/static/js/main.85a5521b.js",
     "static/js/544.bb39a3a7.chunk.js": "/cinema-club/static/js/544.bb39a3a7.chunk.js",
     "static/js/520.5f8451b3.chunk.js": "/cinema-club/static/js/520.5f8451b3.chunk.js",
     "static/js/878.c4b16e1e.chunk.js": "/cinema-club/static/js/878.c4b16e1e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/235.e6e0a7cc.chunk.js": "/cinema-club/static/js/235.e6e0a7cc.chunk.js",
     "index.html": "/cinema-club/index.html",
     "main.6277926a.css.map": "/cinema-club/static/css/main.6277926a.css.map",
-    "main.510af9ee.js.map": "/cinema-club/static/js/main.510af9ee.js.map",
+    "main.85a5521b.js.map": "/cinema-club/static/js/main.85a5521b.js.map",
     "544.bb39a3a7.chunk.js.map": "/cinema-club/static/js/544.bb39a3a7.chunk.js.map",
     "520.5f8451b3.chunk.js.map": "/cinema-club/static/js/520.5f8451b3.chunk.js.map",
     "878.c4b16e1e.chunk.js.map": "/cinema-club/static/js/878.c4b16e1e.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.6277926a.css",
-    "static/js/main.510af9ee.js"
+    "static/js/main.85a5521b.js"
   ]
 }
